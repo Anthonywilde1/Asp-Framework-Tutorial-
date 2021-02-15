@@ -12,9 +12,11 @@
     @foreach (var product in Model.Products)
     {
         <div class="card" style="background-color: @product.color";>
-            @product.color
-            @product.category
-            @product.type
+            <div class="card-body">
+            <h5 class="card-title">@product.color</h5>
+            <p>@product.category</p>
+            <p>@product.type</p>
+            </div>
         </div>
         
     }
